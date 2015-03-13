@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		488DD2C61AB2F1AB000EA679 /* MidiFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 488DD2C31AB2F1AB000EA679 /* MidiFile.mm */; };
+		488DD2C71AB2F1AB000EA679 /* MidiFileSerialize.m in Sources */ = {isa = PBXBuildFile; fileRef = 488DD2C51AB2F1AB000EA679 /* MidiFileSerialize.m */; };
+		488DD2C91AB2F3C2000EA679 /* test.mid in Resources */ = {isa = PBXBuildFile; fileRef = 488DD2C81AB2F3C2000EA679 /* test.mid */; };
 		9E561D641AB2DCA600904BA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E561D631AB2DCA600904BA4 /* main.m */; };
 		9E561D671AB2DCA600904BA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E561D661AB2DCA600904BA4 /* AppDelegate.m */; };
 		9E561D6A1AB2DCA600904BA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E561D691AB2DCA600904BA4 /* ViewController.m */; };
@@ -14,6 +17,8 @@
 		9E561D6F1AB2DCA600904BA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E561D6E1AB2DCA600904BA4 /* Images.xcassets */; };
 		9E561D721AB2DCA600904BA4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9E561D701AB2DCA600904BA4 /* LaunchScreen.xib */; };
 		9E561D7E1AB2DCA600904BA4 /* SimpleRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E561D7D1AB2DCA600904BA4 /* SimpleRecordTests.m */; };
+		9E561D881AB2DF6300904BA4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E561D871AB2DF6300904BA4 /* AVFoundation.framework */; };
+		9E561D8D1AB2E0FC00904BA4 /* RecordFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E561D8C1AB2E0FC00904BA4 /* RecordFile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		488DD2C21AB2F1AB000EA679 /* MidiFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFile.h; sourceTree = "<group>"; };
+		488DD2C31AB2F1AB000EA679 /* MidiFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MidiFile.mm; sourceTree = "<group>"; };
+		488DD2C41AB2F1AB000EA679 /* MidiFileSerialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiFileSerialize.h; sourceTree = "<group>"; };
+		488DD2C51AB2F1AB000EA679 /* MidiFileSerialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MidiFileSerialize.m; sourceTree = "<group>"; };
+		488DD2C81AB2F3C2000EA679 /* test.mid */ = {isa = PBXFileReference; lastKnownFileType = audio.midi; path = test.mid; sourceTree = "<group>"; };
 		9E561D5E1AB2DCA600904BA4 /* SimpleRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E561D621AB2DCA600904BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E561D631AB2DCA600904BA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +50,9 @@
 		9E561D771AB2DCA600904BA4 /* SimpleRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E561D7C1AB2DCA600904BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E561D7D1AB2DCA600904BA4 /* SimpleRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleRecordTests.m; sourceTree = "<group>"; };
+		9E561D871AB2DF6300904BA4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9E561D8B1AB2E0FC00904BA4 /* RecordFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordFile.h; sourceTree = "<group>"; };
+		9E561D8C1AB2E0FC00904BA4 /* RecordFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordFile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E561D881AB2DF6300904BA4 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +74,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		488DD2C11AB2F1AB000EA679 /* MidiFile */ = {
+			isa = PBXGroup;
+			children = (
+				488DD2C21AB2F1AB000EA679 /* MidiFile.h */,
+				488DD2C31AB2F1AB000EA679 /* MidiFile.mm */,
+				488DD2C41AB2F1AB000EA679 /* MidiFileSerialize.h */,
+				488DD2C51AB2F1AB000EA679 /* MidiFileSerialize.m */,
+			);
+			path = MidiFile;
+			sourceTree = "<group>";
+		};
 		9E561D551AB2DCA600904BA4 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 		9E561D601AB2DCA600904BA4 /* SimpleRecord */ = {
 			isa = PBXGroup;
 			children = (
+				488DD2C11AB2F1AB000EA679 /* MidiFile */,
+				9E561D8A1AB2E0EC00904BA4 /* Model */,
 				9E561D651AB2DCA600904BA4 /* AppDelegate.h */,
 				9E561D661AB2DCA600904BA4 /* AppDelegate.m */,
 				9E561D681AB2DCA600904BA4 /* ViewController.h */,
@@ -88,6 +115,8 @@
 				9E561D6B1AB2DCA600904BA4 /* Main.storyboard */,
 				9E561D6E1AB2DCA600904BA4 /* Images.xcassets */,
 				9E561D701AB2DCA600904BA4 /* LaunchScreen.xib */,
+				488DD2C81AB2F3C2000EA679 /* test.mid */,
+				9E561D891AB2DF6C00904BA4 /* framework */,
 				9E561D611AB2DCA600904BA4 /* Supporting Files */,
 			);
 			path = SimpleRecord;
@@ -117,6 +146,23 @@
 				9E561D7C1AB2DCA600904BA4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E561D891AB2DF6C00904BA4 /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				9E561D871AB2DF6300904BA4 /* AVFoundation.framework */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		9E561D8A1AB2E0EC00904BA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9E561D8B1AB2E0FC00904BA4 /* RecordFile.h */,
+				9E561D8C1AB2E0FC00904BA4 /* RecordFile.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +247,7 @@
 			files = (
 				9E561D6D1AB2DCA600904BA4 /* Main.storyboard in Resources */,
 				9E561D721AB2DCA600904BA4 /* LaunchScreen.xib in Resources */,
+				488DD2C91AB2F3C2000EA679 /* test.mid in Resources */,
 				9E561D6F1AB2DCA600904BA4 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,8 +267,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E561D6A1AB2DCA600904BA4 /* ViewController.m in Sources */,
+				488DD2C71AB2F1AB000EA679 /* MidiFileSerialize.m in Sources */,
 				9E561D671AB2DCA600904BA4 /* AppDelegate.m in Sources */,
+				9E561D8D1AB2E0FC00904BA4 /* RecordFile.m in Sources */,
 				9E561D641AB2DCA600904BA4 /* main.m in Sources */,
+				488DD2C61AB2F1AB000EA679 /* MidiFile.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +396,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -356,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SimpleRecord/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -414,6 +466,7 @@
 				9E561D831AB2DCA600904BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E561D841AB2DCA600904BA4 /* Build configuration list for PBXNativeTarget "SimpleRecordTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +475,7 @@
 				9E561D861AB2DCA600904BA4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
